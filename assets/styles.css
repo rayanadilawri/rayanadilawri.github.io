@@ -1,0 +1,22 @@
+body {
+ --base-size: 12px;
+ --gutter: calc(3 x var(--base-size));
+
+ --color--primary: black;
+ --color--secondary:gold;
+ --color--background:white;   
+}
+
+body {
+    background-color: var(--color--secondary);
+}
+header {
+    padding-inline: var(--gutter-size);
+    padding-block: calc(5 * var(--base-size));
+}
+
+@media (min-width: 500px) {
+    :root {
+        --base-size: 20px;
+    }
+}
