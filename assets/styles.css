@@ -20,3 +20,6 @@ header {
         --base-size: 20px;
     }
 }
+
+@media some-criteria-or-rule {
+}
