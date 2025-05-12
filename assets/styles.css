@@ -68,24 +68,33 @@ header {
     font-weight: 700;
     font-style: normal;
     font-size: var(--title-size);
+    padding: 0.4em;
   }
   
   h2 {
     font-family: "aileron", sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding: 1em;
+    line-height: 1;
   }
   
   h3 {
     font-family: "aileron", sans-serif;
     font-weight: 700;
     font-style: italic;
+    line-height: 3;
+  }
+
+  a {
+    line-height: 3;
   }
 
   p {
     font-family: "aileron", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.2;
   }
   
   .intro-bio-container {
@@ -98,21 +107,36 @@ header {
   }
   
   .image img.headshot {
-    width: 5em;
-    height: auto;
+    height: 400px;
+    width: auto;
+    align-items: center;
   }
   
-  .intro-text h1,
-  .intro-text h2 {
-    margin: 0;
-  }
+
+
   
   .bio {
     max-width: 100%;
     padding-top: 10px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   
+
+  .card-list {
+    list-style: none;
+    padding: 1.6em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+  }
+  .card {
+    background-color: var(--color--primary);
+    color: var(--color--background);
+    padding: 1em;
+    gap: 1em;
+  }
+
+
   /* Desktop layout */
   @media (min-width: 800px) {
     :root {
@@ -124,19 +148,27 @@ header {
       justify-content: space-between;
       align-items: flex-start;
       text-align: left;
-      padding: 1em;
+      padding: 0.3em;
     }
   
     .intro-column {
       max-width: 50%;
+      padding: 1em;
     }
   
     .image {
-      display: flex;
+    display: flex;
+    padding: 1em;
     }
   
     .bio {
-      padding-top: 20px;
+      padding: 1em;
     }
   
+    .image img.headshot {
+        height: 600px;
+        width: auto;
+      }
+
+
   }
