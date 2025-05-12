@@ -75,11 +75,52 @@ font-weight: 700;
 font-style: italic;
 }
 
-@media (min-width: 500px) {
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  img {
+    width: auto;
+    height: 500px;
+    border-radius: 50%;
+  }
+  
+  .intro-text h1,
+  .intro-text h2 {
+    margin: 0;
+  }
+  
+  .bio {
+    padding: 20px;
+    max-width: 85%;
+    line-height: 1.4;
+    align-items: center;
+  }
+  
+
+
+@media (min-width: 800px) {
     :root {
         --base-size: 20px;
     }
-}
 
-@media some-criteria-or-rule {
+    .image-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+      }
+    
+      .bio {
+        padding: 20px;
+        max-width: 50%;
+        line-height: 1.4;
+      }
+
 }
