@@ -98,7 +98,7 @@ header {
   }
   
   .image img.headshot {
-    width: 260px;
+    width: 5em;
     height: auto;
     border-radius: 50%;
   }
@@ -125,6 +125,7 @@ header {
       justify-content: space-between;
       align-items: flex-start;
       text-align: left;
+      padding: 1em;
     }
   
     .intro-column {
@@ -132,17 +133,11 @@ header {
     }
   
     .image {
-      max-height: 600px;
       display: flex;
-      justify-content: center;
     }
   
     .bio {
-      max-width: 80%;
       padding-top: 20px;
     }
   
-    .image img.headshot {
-      width: 200px;
-    }
   }
