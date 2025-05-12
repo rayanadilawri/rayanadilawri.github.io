@@ -17,10 +17,11 @@ font-weight: 700;
 font-style: italic;
 
  --base-size: 12px;
- --gutter: calc(3 x var(--base-size));
+ --gutter-size: 2em;
 
- --color--primary: black;;
+ --color--primary: black;
  --color--background:white;   
+
 }
 
 body {
@@ -32,7 +33,12 @@ body {
 }
 header {
     padding-inline: var(--gutter-size);
-    padding-block: calc(5 * var(--base-size));
+    padding: var(--gutter-size);
+    position: sticky;
+    top: 0;
+    background-color: var(--color--primary);
+    z-index: 100;
+    color: var(--color--background);
 }
 
 h1 {
