@@ -17,20 +17,26 @@ font-weight: 700;
 font-style: italic;
 
  --base-size: 12px;
- --gutter-size: 2em;
+ --gutter-size: 20px;
+ --title-size: 2.5rem;
 
  --color--primary: black;
  --color--background:white;   
 
 }
 
-body {
-    background-color: var(--color--background);
-    font-family: "aileron", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+header {
+    display: flex;
+    align-items: center;
+    padding: var(--gutter-size);
+    position: sticky;
+    top: 0;
+    background-color: var(--color--primary);
+    z-index: 100;
+    color: var(--color--background);
+  }
+  
 
-}
 header {
     padding-inline: var(--gutter-size);
     padding: var(--gutter-size);
@@ -56,37 +62,44 @@ header {
   .headerfont {
     margin: 0;
   }
-h1 {
+  
+  h1 {
     font-family: "aileron", sans-serif;
-font-weight: 700;
-font-style: normal;}
-
-
-h2 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--title-size);
+  }
+  
+  h2 {
     font-family: "aileron", sans-serif;
-font-weight: 400;
-font-style: italic;
-}
-
-
-h3{
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h3 {
     font-family: "aileron", sans-serif;
-font-weight: 700;
-font-style: italic;
-}
+    font-weight: 700;
+    font-style: italic;
+  }
 
-
-.image-container {
+  p {
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .intro-bio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     padding: 20px;
+    text-align: left;
   }
   
-  img {
-    width: auto;
-    height: 500px;
+  .image img.headshot {
+    width: 260px;
+    height: auto;
     border-radius: 50%;
   }
   
@@ -96,31 +109,40 @@ font-style: italic;
   }
   
   .bio {
-    padding: 20px;
-    max-width: 85%;
+    max-width: 100%;
+    padding-top: 10px;
     line-height: 1.4;
-    align-items: center;
   }
   
-
-
-@media (min-width: 800px) {
+  /* Desktop layout */
+  @media (min-width: 800px) {
     :root {
-        --base-size: 20px;
+      --base-size: 20px;
     }
-
-    .image-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 30px;
-        padding: 20px;
-      }
-    
-      .bio {
-        padding: 20px;
-        max-width: 50%;
-        line-height: 1.4;
-      }
-
-}
+  
+    .intro-bio-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .intro-column {
+      max-width: 50%;
+    }
+  
+    .image {
+      max-height: 600px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .bio {
+      max-width: 80%;
+      padding-top: 20px;
+    }
+  
+    .image img.headshot {
+      width: 200px;
+    }
+  }
