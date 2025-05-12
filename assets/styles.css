@@ -100,7 +100,6 @@ header {
   .image img.headshot {
     width: 5em;
     height: auto;
-    border-radius: 50%;
   }
   
   .intro-text h1,
