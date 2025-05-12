@@ -1,18 +1,57 @@
-body {
+
+:root{
+    font-family: "aileron", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "aileron", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: "aileron", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: "aileron", sans-serif;
+font-weight: 700;
+font-style: italic;
+
  --base-size: 12px;
  --gutter: calc(3 x var(--base-size));
 
- --color--primary: black;
- --color--secondary:gold;
+ --color--primary: black;;
  --color--background:white;   
 }
 
 body {
-    background-color: var(--color--secondary);
+    background-color: var(--color--background);
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 header {
     padding-inline: var(--gutter-size);
     padding-block: calc(5 * var(--base-size));
+}
+
+h1 {
+    font-family: "aileron", sans-serif;
+font-weight: 700;
+font-style: normal;}
+
+
+h2 {
+    font-family: "aileron", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+
+h3{
+    font-family: "aileron", sans-serif;
+font-weight: 700;
+font-style: italic;
 }
 
 @media (min-width: 500px) {
