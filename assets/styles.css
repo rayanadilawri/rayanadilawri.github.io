@@ -41,6 +41,21 @@ header {
     color: var(--color--background);
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .headerfont {
+    margin: 0;
+  }
 h1 {
     font-family: "aileron", sans-serif;
 font-weight: 700;
