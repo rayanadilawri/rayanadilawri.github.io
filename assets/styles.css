@@ -19,16 +19,19 @@ font-style: italic;
  --base-size: 12px;
  --gutter-size: 20px;
 
- --title-size: 3rem;
- --medium-size: 1.5rem;
- --small-size: 1.2rem;
-
+ --title-size: 3.5rem;
+ --medium-size: 2rem;
+ --small-size: 1.8rem;
+--p-size: 1.5rem;
 
  --color--primary: black;
  --color--background:white;   
 
 }
 
+section {
+    padding-top: 1em;
+}
 header {
     display: flex;
     align-items: center;
@@ -88,8 +91,9 @@ header {
     font-family: "aileron", sans-serif;
     font-weight: 700;
     font-style: italic;
-    line-height: 3;
+    line-height: 2;
   }
+
 
   a {
     line-height: 3;
@@ -128,12 +132,23 @@ header {
     max-width: 100%;
     padding-top: 10px;
     line-height: 1.2;
+    margin: 0;
   }
   
+  #main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    padding-bottom: 1em;
+    align-items: center;
+  }
 
   .card-list {
     list-style: none;
-    padding: 1.6em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5em;
@@ -167,13 +182,12 @@ header {
   
     .image {
     display: flex;
-    padding-left: 1em;
+    padding-left: 2em;
     padding-top: 1em;
     }
   
-    .bio {
-      padding: 1em;
-    }
+
+
   
     .image img.headshot {
         height: 600px;
