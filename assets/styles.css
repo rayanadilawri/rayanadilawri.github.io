@@ -29,8 +29,6 @@ font-style: italic;
 
 }
 
-@media (max-width: 767px) {
-
 
 section {
     padding-top: 1em;
@@ -162,7 +160,7 @@ header {
     padding: 1em;
     gap: 1em;
   }
-}
+
 
   /* Desktop layout */
   @media (min-width: 1200px) {
