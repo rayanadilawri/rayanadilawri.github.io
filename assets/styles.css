@@ -162,7 +162,7 @@ header {
 
 
   /* Desktop layout */
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     :root {
       --base-size: 20px;
     }
